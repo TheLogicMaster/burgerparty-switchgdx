@@ -59,7 +59,8 @@ public class TutorialIndicatorController {
         mGroup.setVisible(true);
         Vector2 pos = new Vector2();
         mInventoryView.getItemPosition(nextItem, pos);
-        mInventoryView.localToAscendantCoordinates(mIndicator.getParent(), pos);
+        if (mInventoryView.isDescendantOf(mIndicator.getParent()))
+            mInventoryView.localToAscendantCoordinates(mIndicator.getParent(), pos);
         pos.y -= mIndicator.getHeight() - 5;
         pos.x -= 5;
 

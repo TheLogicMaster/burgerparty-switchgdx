@@ -28,7 +28,7 @@ public class AchievementView extends AnchorGroup {
         Image icon = new Image(iconRegion);
         Label titleLabel = new Label(achievement.getTitle(), assets.getSkin(), "achievement-title");
         Label descriptionLabel = new Label(achievement.getDescription(), assets.getSkin(), "achievement-description");
-        descriptionLabel.setWrap(true);
+//        descriptionLabel.setWrap(true);
 
         Actor statusIcon = null;
         if (achievement.isUnlocked()) {

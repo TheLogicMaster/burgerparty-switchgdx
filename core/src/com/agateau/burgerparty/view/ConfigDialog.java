@@ -53,7 +53,7 @@ public class ConfigDialog extends Dialog {
 
             Label titleLabel = new Label(titleText, assets.getSkin(), "config-button-title");
             mSubtitleLabel = new Label(subtitleText, assets.getSkin(), "config-button-subtitle");
-            mSubtitleLabel.setWrap(true);
+            mSubtitleLabel.setWrap(false);
 
             addActor(mButton);
             VerticalGroup vGroup = new VerticalGroup();
